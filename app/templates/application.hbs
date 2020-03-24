@@ -1,5 +1,26 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div>
+  <h1>dxdf</h1>
+  <div>
+    <h1>TIMETABLE</h1>
+    <h2>All times shown in <span class="timezone-name"></span> time.</h2>
+    <table id="schedule" class="table table-bordered">
+      <tbody>
+        {{#each model as |show|}}
+          <tr>
+            <td>{{show.title}}</td>
+            <td>{{show.start}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+<video
+        src="https://dongles.streampusher-relay.club/dxdf_processed.mp4"
+        poster="images/nice-default.jpg"
+        class="fullscreen"
+        autoplay
+        muted
+        loop
+        >
+</video>

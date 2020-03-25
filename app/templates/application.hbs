@@ -1,10 +1,11 @@
 <div class="container mx-auto text-yellow-400">
   <div class="flex justify-center">
-    <h1 class="text-2xl">dxdf</h1>
+    <h1 class="text-2xl">DXDF</h1>
   </div>
+  <p>Over 48 hours continuous streaming party! Tune in live at <a href="https://datafruits.fm/chat" target="_blank" rel="noopener">datafruits.fm</a></p>
   <div>
     <h1 class="text-xl">TIMETABLE</h1>
-    <h2>All times shown in <span class="timezone-name"></span> time.</h2>
+    <h2>All times shown in <span class="font-bold">{{timezone}}</span> time.</h2>
     <table id="schedule" class="table table-bordered">
       <tbody>
         {{#each model as |show|}}

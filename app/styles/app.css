@@ -7,6 +7,10 @@
 /* @import "utilities.css"; */
 /*  */
 
+div.container {
+  background: rgba(0, 0, 0, 0.68);
+}
+
 video.fullscreen {
   position: fixed;
   top: 50%;

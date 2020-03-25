@@ -12,7 +12,7 @@
       <tbody>
         {{#each model as |show|}}
           <tr>
-            <td>{{show.title}}</td>
+            <td><a href="{{show.url}}" target="_blank" rel="noopener">{{show.title}}</a></td>
             <td>{{format-date show.start}}</td>
           </tr>
         {{/each}}

@@ -18,5 +18,16 @@ export default Model.extend({
   htmlDescription: attr(),
   tweetContent: attr(),
   startsAt: alias('start'),
-  endsAt: alias('end')
+  endsAt: alias('end'),
+  url: computed('description', function(){
+    if(this.description){
+      var testUrl = this.description.match(/(https?:\/\/[^ ]*)/),
+      onlyUrl = testUrl && testUrl[1];
+    }
+    if(onlyUrl){
+      return onlyUrl;
+    }else{
+      return `https://datafruits.fm/shows/${this.id}`;
+    }
+  })
 });

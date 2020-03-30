@@ -8,7 +8,7 @@ export default class ApplicationRoute extends Route {
     query.timezone = jstz.determine().name();
 
     let start = "2020-03-27";
-    let end = "2020-03-31";
+    let end = "2020-04-01";
     query.start = moment(start).startOf('day').format('YYYY-MM-DD');
     query.end = moment(end).endOf('day').format('YYYY-MM-DD');
     return this.store.query('scheduled-show', query);

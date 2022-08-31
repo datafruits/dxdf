@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "jstimezonedetect": "^1.0.7",
-    "moment-timezone": "^0.5.28"
+    "moment-timezone": "^0.5.35"
   }
 }
